@@ -45,13 +45,13 @@ public:
         : topLeft(x1,y1), bottomRight(x2,y2) {}  // stub — fix initializer
 
     // TODO 7: const getWidth()
-    double getWidth() const { return bottomRight.x - topLeft.x; }  // stub
+    double getWidth() const { return abs(bottomRight.x - topLeft.x); }  // stub
 
     // TODO 8: const getHeight()
     double getHeight() const { return abs(topLeft.y - bottomRight.y); }  // stub
 
     // TODO 9: const getArea()
-    double getArea() const { return getHeight() * getWidth(); }  // stub
+    double getArea() const { return abs(getHeight() * getWidth()); }  // stub
 
     // TODO 10: const display()
     void display() const { 
